@@ -1,0 +1,9 @@
+<ion-view view-title="Q {{currNum}} of {{totalNum}}">
+  <ion-content class="padding">
+    <div ng-include="template"></div>
+    <div class="button-bar" style="position: absolute; button: 0">
+      <a ng-show="{{currNum < totalNum}}" ng-click="submitAnswer();storage.answer=''" class="button button-positive">Next</a>
+      <a ng-show="{{currNum == totalNum}}" ng-click="submitAnswer();storage.answer=''" class="button button-balanced">Done</a>
+    </div>
+  </ion-content>
+</ion-view>
