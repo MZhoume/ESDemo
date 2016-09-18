@@ -3,8 +3,10 @@
 namespace Services {
     export class StorageService {
         templates: string[] = [
+            "questions/0.html",
             "questions/1.html",
-            "questions/2.html"
+            "questions/2.html",
+            "questions/3.html"
         ];
 
         answers: string[] = [];

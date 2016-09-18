@@ -1,7 +1,7 @@
 <ion-view view-title="Your answers">
   <ion-content class="padding">
       <ul>
-          <li ng-repeat="ans in answers">{{ans}}</li>
+          <li ng-repeat="ans in answers track by $index">{{ans}}</li>
       </ul>
   </ion-content>
 </ion-view>
